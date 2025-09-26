@@ -4,3 +4,12 @@ nav a.active {
   background: black;
   color: white;
 }
+
+.table-link {
+  color: hsl(210, 77%, 46%);
+  text-decoration: underline;
+}
+
+.table-link:hover {
+  text-decoration: none;
+}
