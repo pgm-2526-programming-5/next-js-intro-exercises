@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { User } from "./user.model";
+import delay from "delay";
 
 export default async function Users({
   searchParams,
@@ -23,6 +24,8 @@ export default async function Users({
       cache: "no-store",
     }
   );
+
+  await delay(2000);
 
   const users: User[] = await response.json();
 
